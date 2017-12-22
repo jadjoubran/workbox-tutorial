@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Air Antarctica</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body>
+
+    <header>Air Antarctica</header>
+
+    <div id="content">
+
+        <div class="card">
+            <h2>Amsterdam, Netherlands</h2>
+            <p>$1500 • 1 stop</p>
+        </div>
+        <div class="card">
+            <h2>Brussels, Belgium</h2>
+            <p>$1300 • 1 stop</p>
+        </div>
+        <div class="card">
+            <h2>Buenos Aires, Argentina</h2>
+            <p>$400 • Direct</p>
+        </div>
+
+    </div>
+
+    <script async src="js/app.js"></script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+</script>
+</body>
+</html>
